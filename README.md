@@ -20,7 +20,7 @@ A web-based application for calculating and managing electricity bills. This pro
 4. Access the app via `index.php`.
 
 ## Team Members
-- Ihshan
+  - Ihshan
   - Manjari
   - Kirishnanath
   - Manodya
