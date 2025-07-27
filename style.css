@@ -1,0 +1,339 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #23243a 0%, #3a3a5a 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Heading Styles */
+h1 {
+    color: #ff6f61;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+/* Container for Form & Table */
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: #2a2a3d;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+/* Login Container */
+.login-container {
+    min-height: 350px;
+    justify-content: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #ff6f61;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #23243a;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+input:focus {
+    border: 2px solid #ff6f61;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+.btn-primary:hover {
+    background: #ff3b2e;
+}
+
+/* Form Footer Links */
+.form-footer {
+    margin-top: 18px;
+    text-align: center;
+}
+.form-footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 500;
+}
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styles for History */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    background: #23243a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+th, td {
+    padding: 12px 8px;
+    text-align: center;
+    border-bottom: 1px solid #2a2a3d;
+}
+th {
+    background: #ff6f61;
+    color: #fff;
+    font-weight: 600;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Scrollable Table Section */
+.table-scroll {
+    max-height: 320px;
+    overflow-y: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin-bottom: 16px;
+    background: #23243a;
+}
+
+.table-scroll::-webkit-scrollbar {
+    width: 8px;
+    background: #2a2a3d;
+}
+.table-scroll::-webkit-scrollbar-thumb {
+    background: #ff6f61;
+    border-radius: 8px;
+}
+
+/* Card Styles for Dashboard */
+.card {
+    background: #23243a;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    margin: 18px 0;
+    padding: 18px 16px;
+    width: 100%;
+    transition: box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+}
+.card a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.card:hover {
+    box-shadow: 0 4px 16px rgba(255,111,97,0.15);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    color: #aaa;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 16px;
+    color: #ff6f61;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Bill Form Enhancements */
+.bill-form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 18px;
+}
+
+.bill-form input[type="number"] {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #23243a;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 4px;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: border 0.2s;
+}
+
+.bill-form input[type="number"]:focus {
+    border: 2px solid #ff6f61;
+}
+
+.bill-form small {
+    font-size: 0.95em;
+    color: #bbb;
+    margin-left: 2px;
+}
+
+.bill-form .btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* Bill History Bigger Table & Responsive */
+.bill-history-container {
+    max-width: 900px !important;
+    width: 100%;
+    margin: 40px auto;
+    padding: 40px 24px;
+    background: #2a2a3d;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-table-scroll {
+    max-height: 480px;
+    min-width: 320px;
+    overflow-x: auto;
+    margin-bottom: 24px;
+}
+
+.bill-history-table th, .bill-history-table td {
+    font-size: 1.1rem;
+    padding: 16px 12px;
+}
+
+@media (max-width: 900px) {
+    .bill-history-container {
+        max-width: 98vw !important;
+        padding: 16px 6px;
+    }
+    .big-table-scroll {
+        max-height: 320px;
+    }
+    .bill-history-table th, .bill-history-table td {
+        font-size: 1rem;
+        padding: 10px 6px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.98rem;
+    }
+    .container, .bill-history-container {
+        max-width: 100vw !important;
+        padding: 8px 2px;
+        border-radius: 8px;
+    }
+    h1 {
+        font-size: 1.3rem;
+        padding: 12px 0;
+    }
+    table, th, td {
+        font-size: 0.92rem;
+        padding: 8px 4px;
+    }
+    .btn-primary, .form-footer {
+        font-size: 1rem;
+        padding: 10px 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    input, button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    table th, table td {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
