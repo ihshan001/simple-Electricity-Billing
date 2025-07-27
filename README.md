@@ -22,7 +22,7 @@ A web-based application for calculating and managing electricity bills. This pro
 ## Team Members
   - Ihshan
   - Manjari
-  - Kirishnanath
+  - Krishnanath
   - Manodya
   - Gayan
   - Dulan
